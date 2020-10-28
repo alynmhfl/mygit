@@ -1,9 +1,9 @@
 import math
 
-radius_str = input ("Enter the radius of your cirlce: ")
-radius_int = int(radius_str)
+inches_str = input("How many inches of rain have fallen: ")
+inches_int = int(inches_str)
 
-circumference = 2 * math.pi * radius_int
-area = math.pi * (radius_int ** 2)
-print ("The circumference is:", circumference,\
-        ", and the area is: ", area1)
+volume = (inches_int/12)*43560
+gallons = volume * 7.48051945
+
+print (inches_int,"in. rain on 1 arce  is",gallons, "gallons")
