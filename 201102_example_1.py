@@ -10,6 +10,7 @@ lead_calculation_float= float(points_remaining_int - 3)
 has_ball_str = input("Does the lead team have the ball (Yes or No): ") 
 
 if has_ball_str == 'Yes': 
+<<<<<<< HEAD
  lead_calculation_float= lead_calculation_float + 0.5 
 else: 
  lead_calculation_float= lead_calculation_float - 0.5 
@@ -17,6 +18,15 @@ else:
 # (Numbers less than zero become zero) 
 if lead_calculation_float< 0: 
  lead_calculation_float= 0 
+=======
+lead_calculation_float= lead_calculation_float + 0.5 
+else: 
+  lead_calculation_float= lead_calculation_float - 0.5 
+
+# (Numbers less than zero become zero) 
+if lead_calculation_float< 0: 
+	lead_calculation_float= 0 
+>>>>>>> 6905513f759c91bf98c8f7c293790f6bfe93d482
 
 # 4. Square that. 
 lead_calculation_float= lead_calculation_float** 2 
@@ -24,7 +34,13 @@ lead_calculation_float= lead_calculation_float** 2
 seconds_remaining_int = int(input("Enter the number of seconds remaining: ")) 
 
 if lead_calculation_float> seconds_remaining_int: 
+<<<<<<< HEAD
  print("Lead is safe.") 
 else: 
  print("Lead is not safe.") 
+=======
+  print("Lead is safe.") 
+else: 
+  print("Lead is not safe.") 
+>>>>>>> 6905513f759c91bf98c8f7c293790f6bfe93d482
 
