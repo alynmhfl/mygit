@@ -10,7 +10,11 @@ lead_calculation_float= float(points_remaining_int - 3)
 has_ball_str = input("Does the lead team have the ball (Yes or No): ") 
 
 if has_ball_str == 'Yes': 
+<<<<<<< HEAD
   lead_calculation_float= lead_calculation_float + 0.5 
+=======
+lead_calculation_float= lead_calculation_float + 0.5 
+>>>>>>> 6905513f759c91bf98c8f7c293790f6bfe93d482
 else: 
   lead_calculation_float= lead_calculation_float - 0.5 
 
