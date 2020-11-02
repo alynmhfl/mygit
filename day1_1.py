@@ -1,7 +1,4 @@
-import math
-radius_str = input ('ENTER THE RADIUS OF YOUR CIRCLE: ')
-radius_int = int (radius_str)
-circumference = 2 * math.pi * radius_int
-area = math.pi * (radius_int ** 2)
-print("THE CIRCUMFERENCES IS:",circumference, \
-	", AND THE AREA IS:",area)
+age = int(input('ENTER YOUR AGE IN YEARS: '))
+max_heart_rate = 206.9 - (0.67* age)
+target = 0.65 * max_heart_rate
+print('YOUR TARGET FAT-BURNING HEART RATE IS', target)
