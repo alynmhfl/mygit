@@ -11,6 +11,6 @@ while number_str != ".":
         number_str = input("Number: ")
         continue
     the_sum += number
-    number_str = input ( "Number: ")
+    number_str = input("Number: ")
 
-print ("Thes sum is: ",the_sum)
+print("Thes sum is: ",the_sum)
