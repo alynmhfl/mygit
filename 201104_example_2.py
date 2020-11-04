@@ -10,7 +10,7 @@ while number_str != ".":
   if number % 2 == 1: # number is not even (it is odd) 
     print ("Error, only even numbers please.") 
     number_str = input("Please enter the number again: ")
-    number = int(number_str)  
+    continue  
   sum_num += number 
   number_str = input ( "Please enter another number('.' if you want to exit): ") 
 
