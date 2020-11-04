@@ -12,10 +12,7 @@ while str != ".":
         str = input("Number: ")
         continue
     sum += number
-    if sum != number:
-        break
-    else:
-        str = input("Number: ")
+    str = input("Number: ")
 print("Thes sum is: ",sum)
 
 
