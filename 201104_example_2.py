@@ -1,15 +1,15 @@
 # initialize the input number and the sum 
-number str = input("Number: )
-the sum = 0 
+number_str = input("Number: ")
+the_sum = 0 
 
 # Stop if a period (.) is entered. 
 # remember, number str is a string until we convert it 
-while number str != "." 
-number = int(number str) 
-if number % 2 == 1: # number is not even (it is odd) 
-print ("Error, only even numbers please.") 
-number str = input("Number: ") 
- 
-the sum += number 
-number_str = input ( "Number: ") 
-print ("Thes sum is:")
+while number_str != ".":
+	number = int(number_str) 
+	while number % 2 == 1: # number is not even (it is odd) 
+		print ("Error, only even numbers please.") 
+		number_str = input("Number: ") 
+		number = int(number_str)
+	the_sum += number 
+	print ("The sum is:", the_sum)
+	number_str = input ( "Number: ") 
