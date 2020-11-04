@@ -1,4 +1,4 @@
-#Program: Summation of even numbers
+#Program: Summation for the even numbers
 # initialize the input number and the sum 
 number_str = input("Please enter the number: ")
 sum_num = 0 
