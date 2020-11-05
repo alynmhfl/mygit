@@ -1,15 +1,31 @@
-# initialize the input number and the sum 
-number str = input("Number: )
-the sum = 0 
+# initialize the input number and the sum
+ 
+number_str = input("Number: ")
+number = int(number_str)
+sum = 0 
 
 # Stop if a period (.) is entered. 
-# remember, number str is a string until we convert it 
-while number str != "." 
-number = int(number str) 
-if number % 2 == 1: # number is not even (it is odd) 
-print ("Error, only even numbers please.") 
-number str = input("Number: ") 
+# remember, number_str is a string until we convert it
  
-the sum += number 
-number_str = input ( "Number: ") 
-print ("Thes sum is:")
+while number_str != "." :
+	# number is not even (it is odd) 
+	if number % 2 == 1:
+		print ("Error, only even numbers please.")
+		number_str = input("Number: ")
+		number = int(number_str)
+		sum += number
+	else:
+		print ("Number is: ",number)
+		number_str = input("Number: ")
+		number = int(number_str)
+		sum += number
+	 
+#number_str = input ( "Number: ") 
+#print ("The sum is:")
+
+#Reference
+#num = int(input("Enter a number: "))
+#if (num % 2) == 0:
+#print("{0} is Even".format(num))
+#else:
+#print("{0} is Odd".format(num))
