@@ -16,5 +16,7 @@ while 0 <= guess <= 100:
   guess_str = input("Guess a number: ") 
   if guess_str == 'none':
      break
-  print ("You quitted early, the number was:",number) 
+  guess = int(guess_str)
+print ("You quitted early, the number was:",number) 
   
+
