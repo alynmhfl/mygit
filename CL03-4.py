@@ -18,3 +18,5 @@ try:
 		print("Line {} of file{} not found".format (find_line_int, file_str))
 	input_file.close()
 	
+except:
+	print("File not found. Please try again.")
