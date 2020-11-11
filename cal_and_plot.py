@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 x=[ 0, 1, 2, 3]
 y=[ 10, 100, 50, 80]
 x2=[ 0, 1, 2, 3]
-y2=[ 10, 70, 30, 30]
+y2=[ 100, 70, 30, 30]
 lx=len(x)
 
 #define a function which can perform z= x/2+y. Then plot z.
