@@ -8,14 +8,14 @@ y2 = [ 100, 70, 30, 30 ]
 # define a function which can perform z = x/2 + y. Then plot z.
 # Name your file as cal_and_plot.py
 
-def Z(x,y):
+def z_result(x,y):
 	z = []
 	for count in range(4):
 		z.insert(count, x[count]/2 + y[count])
 	return z
 
-z = (Z(x,y))
-z2 = (Z(x2,y2))
+z = (z_result(x,y))
+z2 = (z_result(x2,y2))
 
 plt.plot(x, z, color = 'brown', label= 'z')
 plt.plot(x2, z2, color = 'purple', label= 'z2')
