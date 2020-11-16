@@ -1,28 +1,9 @@
-#this program will search throught a text file
-#for a word with vovel 'a', 'e', 'i', 'o', 'u'
-#in sequence
 
-import string
-data_file = open ('dictionary.txt', 'r')
+#Convert celsius to fahrenheit
+def cel_to_fahrenheit(cel_float):
+    return cel_float *1.8 +32
 
-def clean_word(word):
-    return word.strip().lower()
-
-def get_vowels_in_word(word):
-    vowel_str = 'aeiou'
-    vowel_in_word = ''
-    for char in word:
-        if char in vowel_str:
-            vowel_in_word += char
-    return vowel_in_word
-
-print("Find words containing vowels 'aeiou' in that order:")
-for word in data_file:
-    word = clean_word(word)
-    if len(word) <= 6:
-        continue
-    vowel_str = get_vowels_in_word(word)
-    if vowel_str == 'aeiou':
-        print(word)
-            
-
+print ("Covert Celcius to Fahrenheit")
+celsius_float_input = float(input("Enter your temp in cel: "))
+fah_float =  cel_to_fahrenheit(celsius_float_input)
+print("{} convert to {}".format(celsius_float_input,fah_float))
