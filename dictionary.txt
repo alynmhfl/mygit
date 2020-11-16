@@ -1,0 +1,9 @@
+aeroplane
+barricade
+continue
+decrease
+elephant
+helicopter
+
+aeioucd
+aceioud
