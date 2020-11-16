@@ -1,0 +1,7 @@
+dictionary 
+celsius
+fahrenheit
+first second 
+aeioudddd
+ssaeiggoucccc
+
