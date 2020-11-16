@@ -1,0 +1,7 @@
+apple
+general
+aeiou
+banana
+flower
+umbrella
+acedious
