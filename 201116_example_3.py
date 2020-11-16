@@ -5,7 +5,7 @@ def clean_word(word):
   return word.strip().lower()
 
 def get_vowels_in_word(word):
-  """Return Vowels in string word - inclide repeats."""
+  """Return Vowels in string word - include repeats."""
   vowel_str = "aeiou"
   vowels_in_word = " "
   for char in word:
@@ -16,7 +16,7 @@ def get_vowels_in_word(word):
 #Main program
 print("Find words containing vowels 'aeiou' in that order:")
 for word in data_file:
-  word + clean_word(word)
+  word = clean_word(word)
   if len(word)<=6:
     continue
   vowel_str = get_vowels_in_word(word)
