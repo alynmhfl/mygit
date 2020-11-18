@@ -21,7 +21,7 @@ while not valid_input_bool:
 		print("Bad Input")
 
 if are_anagrams(word1,word2):	#return True or False
-	print("The words are anagrams.")
+	print("The words {} and {} are anagrams.".format(word1,word2))
 else:
-	print("The words are not anagrams.")
+	print("The words {} and {} are not anagrams.".format(word1,word2))
 
