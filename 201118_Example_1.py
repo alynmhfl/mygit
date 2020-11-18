@@ -9,9 +9,16 @@ def are_anagrams(word1,word2):
 
 print("Anagram Test")
 
-#1. Input two words.
-two_words = input("Enter two space separated words: ")
-word1,word2 = two_words.split()	#split into a list of words
+#1. Input two words, checking for errors now
+valid_input_bool = False
+while not valid_input_bool:
+	try:
+		two_words = input("Enter two space separated words: ")
+		word1,word2 = two_words.split()	#split into a list of words
+		
+		valid_input_bool = True
+	except ValueError:
+		print("Bad Input")
 
 if are_anagrams(word1,word2):	#return True or False
 	print("The words are anagrams.")
